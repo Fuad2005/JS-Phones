@@ -1,0 +1,40 @@
+.product-container {
+    $ymaring: 50px;
+    margin-top: $ymaring;
+    margin-bottom: $ymaring;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .product-card {
+        height: 500px;
+        width: 400px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        .image-div {
+            height: 80%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 5px;
+            }
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-around ;
+            align-items: center;
+            height: 20%;
+            flex-wrap: wrap;
+            flex-direction: column;
+            .title {
+                font-size: 20px;
+            }
+            .price {
+                font-weight: bold;
+            }
+        }
+    }
+}
